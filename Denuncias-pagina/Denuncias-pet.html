@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denuncias-Pets</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f6fb;
+        }
+        
+        /* TOPO */
+        .topbar {
+            background: #3f4c8b;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        /* CONTEÚDO */
+        .wrapper {
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+        
+        /* CABEÇALHO DA PÁGINA */
+        .page-header {
+            margin-bottom: 20px;
+        }
+        
+        .breadcrumb {
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        .page-header h1 {
+            margin: 5px 0;
+            color: #2c3e70;
+        }
+        
+        .page-header p {
+            color: #6c757d;
+        }
+        
+        /* CARD */
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        /* TÍTULO DA SEÇÃO */
+        .section-title {
+            color: #2c3e70;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        /* GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        /* INPUTS */
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        
+        textarea {
+            grid-column: span 2;
+            height: 80px;
+        }
+        
+        /* MAPA */
+        .map {
+            grid-column: span 2;
+            height: 200px;
+            border-radius: 8px;
+            background: #dfe3ea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 14px;
+        }
+        
+        /* UPLOAD */
+        .upload {
+            grid-column: span 2;
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+            color: #777;
+            border-radius: 8px;
+        }
+        
+        /* DECLARAÇÃO */
+        .declaracao {
+            margin-top: 20px;
+        }
+        
+        .declaracao-box {
+            background: #eef1f7;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 13px;
+        }
+        
+        /* BOTÕES */
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .btn-cancel {
+            border: 1px solid #3f4c8b;
+            background: white;
+            padding: 10px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        
+        .btn-submit {
+            background: #3f4c8b;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        
+        /* RESPONSIVO */
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        
+            textarea, .map, .upload {
+                grid-column: span 1;
+            }
+        }
+        
+        /* LABEL ESCONDIDO */
+        .hidden-label {
+            display: none;
+        }
+        </style>
+   </head>
+<body>
+    <div class="topbar">
+        <div>Programa ARCA</div>
+        <div>Início &nbsp;&nbsp; Perfil &nbsp;&nbsp; Ajuda</div>
+    </div>
+    
+    <div class="wrapper">
+    
+        <div class="page-header">
+            <div class="breadcrumb">SERVIÇOS / DENÚNCIA</div>
+            <h1>Denúncia de Maus-Tratos</h1>
+            <p>Registre uma denúncia de forma segura e anônima</p>
+        </div>
+    
+        <div class="card">
+    
+            <div class="section-title">Detalhes da Denúncia</div>
+    
+            
+            <label class="hidden-label">SISTEMA WEB</label>
+    
+            <div class="grid">
+    
+                <textarea placeholder="Descreva detalhadamente o incidente de maus-tratos..."></textarea>
+    
+                <input type="text" placeholder="Endereço completo ou referência">
+    
+                <select>
+                    <option>Selecione Espécie</option>
+                    <option>Cachorro</option>
+                    <option>Gato</option>
+                </select>
+    
+                <div class="map" >
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12594.796413486143!2d-40.27079796092201!3d-20.19838958248505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb81ff105549a61%3A0x409c2919913258a7!2sSerra%20-%20ES!5e0!3m2!1spt-PT!2sbr!4v1778539314386!5m2!1spt-PT!2sbr" width="1000" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+    
+                <div class="upload">
+                 <input type="file" id="arquivo" name="arquivo" > 
+                </div>
+    
+            </div>
+    
+            <div class="declaracao">
+                <div class="section-title">Declaração Legal</div>
+                <div class="declaracao-box">
+                    <input type="checkbox">
+                    Declaro estar ciente de que informações falsas podem gerar consequências legais.
+                </div>
+            </div>
+    
+            <div class="buttons">
+                <button class="btn-cancel">Cancelar</button>
+                <button class="btn-submit">Enviar Denúncia</button>
+            </div>
+    
+        </div>
+    
+    </div>
+    
+    
+</body>
+</html>
