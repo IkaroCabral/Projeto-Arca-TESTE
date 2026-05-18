@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notificações</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f6fb;
+}
+
+.topbar {
+    background: #3f4c8b;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.novo {
+    background: #d1e7dd;
+}
+
+.lido {
+    background: #ddd;
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+    <div>Programa ARCA</div>
+    <div>Início | Perfil | Ajuda</div>
+</div>
+
+<div class="container">
+
+    <h1>Notificações</h1>
+
+    <div class="card">
+        <h3>Filtros</h3>
+        <select>
+            <option>Status</option>
+        </select>
+        <input type="text" placeholder="Buscar...">
+    </div>
+
+    <div class="item">
+        <div>Castração aprovada</div>
+        <span class="status novo">Novo</span>
+    </div>
+
+    <div class="item">
+        <div>Vacinação agendada</div>
+        <span class="status novo">Novo</span>
+    </div>
+
+    <div class="item">
+        <div>Pedido em análise</div>
+        <span class="status novo">Novo</span>
+    </div>
+
+    <div class="item">
+        <div>Mensagem lida</div>
+        <span class="status lido">Lido</span>
+    </div>
+
+</div>
+
+</body>
+</html>
