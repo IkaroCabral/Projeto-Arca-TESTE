@@ -1,0 +1,196 @@
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f6fb;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+
+        .topo {
+    background: #2f4b8f;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+
+.menu {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+        
+
+
+        .conteúdo {
+             width: 100%;
+            max-width: 1000px;
+            margin: 40px auto;
+             flex: 1;
+        }
+        
+       
+
+        .cabeçalho {
+            margin-bottom: 20px;
+        }
+        
+        .breadcrumb {
+            color: #2f4b8f;
+            font-size: 20px;
+            
+        }
+
+        .titulo_h1 {
+            color: #2f4b8f;
+        }
+
+        .subtitulo_p {
+            color: #777;
+        }
+
+       
+        
+        .page-header h1 {
+            margin: 5px 0;
+            color: #2c3e70;
+        }
+        
+        .page-header p {
+            color: #39648a;
+        }
+        
+
+
+      
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+
+       
+        .título_seção {
+            color: #2f4b8f;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+       
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        
+        
+        .full {
+            grid-column: span 2;
+        }
+        
+     
+        .file {
+            border: 2px dashed #ccc;
+            padding: 25px;
+            text-align: center;
+            color: #777;
+            border-radius: 8px;
+        }
+
+
+
+        .upload {
+         border: 2px dashed #ccc;
+         padding: 25px;
+         text-align: center;
+         color: #777;
+         border-radius: 8px;
+           }
+
+       .upload input {
+           width: 100%;
+            }
+
+       .full {
+         grid-column: span 2;
+            }
+        
+
+
+        
+        .botões {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .btn-cancel {
+            border: 1px solid #3f4c8b;
+            background: white;
+            padding: 10px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        
+        .btn-save {
+            background: #3f4c8b;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        
+        footer{
+    background: #2f4b8f;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 40px;
+}
+
+
+
+        
+        
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        
+            .full {
+                grid-column: span 1;
+            }
+        }
+        
+        
+        
