@@ -5,13 +5,14 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            background-image: url('./fundo_cadastro1.png') ;
         }
         
 
         .topo {
     background: #2f4b8f;
     color: white;
-    padding: 15px 40px;
+    padding: 20px 40px;
     display: flex;
     align-items: center;
     position: relative;
